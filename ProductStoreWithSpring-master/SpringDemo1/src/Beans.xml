@@ -1,0 +1,31 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+     http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+     http://www.springframework.org/schema/context
+     http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+	
+
+	<context:annotation-config/>
+	<context:component-scan base-package="com.cg" />
+  <!--  <bean id = "Product" class = "com.cg.bean.Product">
+      <property name = "pid" value = "1"/>
+      <property name="pName" value="mobile"/>
+      <property name="price"  value="10000"/>
+      <constructor-arg type="int"><value>5</value></constructor-arg>
+      <constructor-arg type="String"><value >mobile</value></constructor-arg>
+      <constructor-arg type="double"><value >10000</value></constructor-arg>
+   </bean>
+   
+   <bean id="controller" class="com.cg.controller.ProductControl" autowire="constructor" scope="prototype" init-method="welcome" destroy-method="goodBye">
+   	  <property name="service">
+   	  	<ref bean="service"/>
+   	  </property> 
+   	  <property name="product">
+   	  	<ref bean="product"/>
+   	  </property>
+   </bean>
+    
+   <bean id="service" class="com.cg.service.ProductService"/>
+   -->
+</beans>
